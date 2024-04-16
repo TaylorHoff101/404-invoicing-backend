@@ -1,0 +1,510 @@
+<html lang="en">
+ <body>
+  <div>
+   <!--        <span th:if="${report != null}" th:text="${report.globalStatus}"></span>-->
+   <div>
+    <div>
+     <div>
+      <h1>
+       Validation failed:
+       <span>
+        7
+       </span>
+       errors and
+       <span>
+        0
+       </span>
+       warnings found
+      </h1>
+     </div>
+    </div>
+    <!-- XML validation -->
+    <div>
+     <div>
+      <span>
+       <span>
+        XML syntax validation
+       </span>
+       passed
+      </span>
+     </div>
+    </div>
+    <!-- XSD validation -->
+    <div>
+     <div>
+      <div>
+       <span>
+        XSD validation
+       </span>
+       <span>
+        against
+       </span>
+       <span>
+        UBL-Invoice-2.1.xsd
+       </span>
+       <span>
+        passed
+       </span>
+      </div>
+     </div>
+    </div>
+    <!-- Schematron validation -->
+    <div>
+     <div>
+      <div>
+       <div>
+        <span>
+         Schematron validation
+        </span>
+        <span>
+         against
+        </span>
+        <span>
+         AUNZ-PEPPOL-validation
+        </span>
+        <span>
+         failed:
+        </span>
+        <span>
+         1
+        </span>
+        errors and
+        <span>
+         0
+        </span>
+        warnings found:
+        <div>
+         <a href="#">
+          <i>
+          </i>
+          [
+          <span>
+           4
+          </span>
+          :
+          <span>
+           68
+          </span>
+          ]
+         </a>
+         <ul>
+          <li>
+           <span>
+            Error Level:
+           </span>
+           <span>
+            ERROR
+           </span>
+          </li>
+          <li>
+           <span>
+            Error Id:
+           </span>
+           <span>
+            PEPPOL-EN16931-R004-AUNZ
+           </span>
+          </li>
+          <li>
+           <span>
+            Schematron Test:
+           </span>
+           <span>
+            starts-with(normalize-space(cbc:CustomizationID/text()), 'urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:aunz:3.0')
+           </span>
+          </li>
+          <li>
+           <span>
+            XPath:
+           </span>
+           <span>
+            /Invoice[1]
+           </span>
+          </li>
+          <li>
+           <span>
+            Error:
+           </span>
+           <span>
+            Specification identifier MUST have the value 'urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:aunz:3.0'.
+           </span>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div>
+     <div>
+      <div>
+       <div>
+        <span>
+         Schematron validation
+        </span>
+        <span>
+         against
+        </span>
+        <span>
+         AUNZ-UBL-validation
+        </span>
+        <span>
+         failed:
+        </span>
+        <span>
+         6
+        </span>
+        errors and
+        <span>
+         0
+        </span>
+        warnings found:
+        <div>
+         <a href="#">
+          <i>
+          </i>
+          [
+          <span>
+           107
+          </span>
+          :
+          <span>
+           30
+          </span>
+          ]
+         </a>
+         <ul>
+          <li>
+           <span>
+            Error Level:
+           </span>
+           <span>
+            ERROR
+           </span>
+          </li>
+          <li>
+           <span>
+            Error Id:
+           </span>
+           <span>
+            BR-37-AUNZ
+           </span>
+          </li>
+          <li>
+           <span>
+            Schematron Test:
+           </span>
+           <span>
+            exists(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='GST']/cbc:ID)
+           </span>
+          </li>
+          <li>
+           <span>
+            XPath:
+           </span>
+           <span>
+            /Invoice[1]/AllowanceCharge[1]
+           </span>
+          </li>
+          <li>
+           <span>
+            Error:
+           </span>
+           <span>
+            [BR-37-AUNZ]-Each Document level charge (BG-21) shall have a Document level charge Tax category code (BT-102).
+           </span>
+          </li>
+         </ul>
+        </div>
+        <div>
+         <a href="#">
+          <i>
+          </i>
+          [
+          <span>
+           121
+          </span>
+          :
+          <span>
+           26
+          </span>
+          ]
+         </a>
+         <ul>
+          <li>
+           <span>
+            Error Level:
+           </span>
+           <span>
+            ERROR
+           </span>
+          </li>
+          <li>
+           <span>
+            Error Id:
+           </span>
+           <span>
+            BR-47-AUNZ
+           </span>
+          </li>
+          <li>
+           <span>
+            Schematron Test:
+           </span>
+           <span>
+            exists(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='GST']/cbc:ID)
+           </span>
+          </li>
+          <li>
+           <span>
+            XPath:
+           </span>
+           <span>
+            /Invoice[1]/TaxTotal[1]/TaxSubtotal[1]
+           </span>
+          </li>
+          <li>
+           <span>
+            Error:
+           </span>
+           <span>
+            [BR-47-AUNZ]-Each Tax breakdown (BG-23) shall be defined through a Tax category code (BT-118).
+           </span>
+          </li>
+         </ul>
+        </div>
+        <div>
+         <a href="#">
+          <i>
+          </i>
+          [
+          <span>
+           121
+          </span>
+          :
+          <span>
+           26
+          </span>
+          ]
+         </a>
+         <ul>
+          <li>
+           <span>
+            Error Level:
+           </span>
+           <span>
+            ERROR
+           </span>
+          </li>
+          <li>
+           <span>
+            Error Id:
+           </span>
+           <span>
+            BR-48-AUNZ
+           </span>
+          </li>
+          <li>
+           <span>
+            Schematron Test:
+           </span>
+           <span>
+            exists(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='GST']/cbc:Percent) or (cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='GST']/normalize-space(cbc:ID)='O')
+           </span>
+          </li>
+          <li>
+           <span>
+            XPath:
+           </span>
+           <span>
+            /Invoice[1]/TaxTotal[1]/TaxSubtotal[1]
+           </span>
+          </li>
+          <li>
+           <span>
+            Error:
+           </span>
+           <span>
+            [BR-48-AUNZ]-Each Tax breakdown (BG-23) shall have a Tax category rate (BT-119), except if the Invoice is not subject to Tax.
+           </span>
+          </li>
+         </ul>
+        </div>
+        <div>
+         <a href="#">
+          <i>
+          </i>
+          [
+          <span>
+           121
+          </span>
+          :
+          <span>
+           26
+          </span>
+          ]
+         </a>
+         <ul>
+          <li>
+           <span>
+            Error Level:
+           </span>
+           <span>
+            ERROR
+           </span>
+          </li>
+          <li>
+           <span>
+            Error Id:
+           </span>
+           <span>
+            BR-CO-17-AUNZ
+           </span>
+          </li>
+          <li>
+           <span>
+            Schematron Test:
+           </span>
+           <span>
+            (round(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='GST']/xs:decimal(cbc:Percent)) = 0 and (round(xs:decimal(cbc:TaxAmount)) = 0)) or (round(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='GST']/xs:decimal(cbc:Percent)) != 0 and ((abs(xs:decimal(cbc:TaxAmount)) - 1 &lt; round(abs(xs:decimal(cbc:TaxableAmount)) * (cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='GST']/xs:decimal(cbc:Percent) div 100) * 10 * 10) div 100 ) and (abs(xs:decimal(cbc:TaxAmount)) + 1 &gt; round(abs(xs:decimal(cbc:TaxableAmount)) * (cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='GST']/xs:decimal(cbc:Percent) div 100) * 10 * 10) div 100 ))) or (not(exists(cac:TaxCategory[cac:TaxScheme/normalize-space(upper-case(cbc:ID))='GST']/xs:decimal(cbc:Percent))) and (round(xs:decimal(cbc:TaxAmount)) = 0))
+           </span>
+          </li>
+          <li>
+           <span>
+            XPath:
+           </span>
+           <span>
+            /Invoice[1]/TaxTotal[1]/TaxSubtotal[1]
+           </span>
+          </li>
+          <li>
+           <span>
+            Error:
+           </span>
+           <span>
+            [BR-CO-17-AUNZ]-Tax category tax amount (BT-117) = Tax category taxable amount (BT-116) x (Tax category rate (BT-119) / 100), rounded to two decimals.
+           </span>
+          </li>
+         </ul>
+        </div>
+        <div>
+         <a href="#">
+          <i>
+          </i>
+          [
+          <span>
+           141
+          </span>
+          :
+          <span>
+           18
+          </span>
+          ]
+         </a>
+         <ul>
+          <li>
+           <span>
+            Error Level:
+           </span>
+           <span>
+            ERROR
+           </span>
+          </li>
+          <li>
+           <span>
+            Error Id:
+           </span>
+           <span>
+            BR-CO-04-AUNZ
+           </span>
+          </li>
+          <li>
+           <span>
+            Schematron Test:
+           </span>
+           <span>
+            (cac:Item/cac:ClassifiedTaxCategory[cac:TaxScheme/(normalize-space(upper-case(cbc:ID))='GST')]/cbc:ID)
+           </span>
+          </li>
+          <li>
+           <span>
+            XPath:
+           </span>
+           <span>
+            /Invoice[1]/InvoiceLine[1]
+           </span>
+          </li>
+          <li>
+           <span>
+            Error:
+           </span>
+           <span>
+            [BR-CO-04-AUNZ]-Each Invoice line (BG-25) shall be categorized with an Invoiced item Tax category code (BT-151).
+           </span>
+          </li>
+         </ul>
+        </div>
+        <div>
+         <a href="#">
+          <i>
+          </i>
+          [
+          <span>
+           173
+          </span>
+          :
+          <span>
+           18
+          </span>
+          ]
+         </a>
+         <ul>
+          <li>
+           <span>
+            Error Level:
+           </span>
+           <span>
+            ERROR
+           </span>
+          </li>
+          <li>
+           <span>
+            Error Id:
+           </span>
+           <span>
+            BR-CO-04-AUNZ
+           </span>
+          </li>
+          <li>
+           <span>
+            Schematron Test:
+           </span>
+           <span>
+            (cac:Item/cac:ClassifiedTaxCategory[cac:TaxScheme/(normalize-space(upper-case(cbc:ID))='GST')]/cbc:ID)
+           </span>
+          </li>
+          <li>
+           <span>
+            XPath:
+           </span>
+           <span>
+            /Invoice[1]/InvoiceLine[2]
+           </span>
+          </li>
+          <li>
+           <span>
+            Error:
+           </span>
+           <span>
+            [BR-CO-04-AUNZ]-Each Invoice line (BG-25) shall be categorized with an Invoiced item Tax category code (BT-151).
+           </span>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
